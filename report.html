@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ReconElite Report - $target</title>
+    <link rel="stylesheet" type="text/css" href="report.css">
+</head>
+<body>
+    <h1>ReconElite Report - $target</h1>
+    <h2>Domain Reconnaissance</h2>
+    <pre>
+    <?php
+        $nslookup_file = file_get_contents("results-$target/Domain-reconnaissance/nslookup.txt");
+        echo htmlspecialchars($nslookup_file);
+    ?>
+    </pre>
+
+    <h2>DNS Resolution</h2>
+    <pre>
+    <?php
+        $dig_file = file_get_contents("results-$target/Domain-reconnaissance/dns_records.txt");
+        echo htmlspecialchars($dig_file);
+    ?>
+    </pre>
+</body>
+</html>
