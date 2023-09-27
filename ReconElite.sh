@@ -21,7 +21,7 @@ check_tools() {
     done
 }
 
-echo "flag is: nfsuCTF{617hub_4_u}"
+echo -e "flag is: nfsuCTF{617hub_4_u} \n"
 
 # Check if a target argument is provided
 if [ -z "$1" ]; then
@@ -52,6 +52,8 @@ rustscan_log="$results_dir/Network-mapping/rustscan_network_map.txt"
 gobuster_log="$results_dir/Domain-reconnaissance/directory.txt"
 nuclei_log="$results_dir/Vulnerability-scanning/nuclei_output.txt"
 waybackurls_log="$results_dir/Domain-reconnaissance/waybackurls_output.txt"
+
+
 
 generate_html_report() {
     local report_file="$results_dir/Reporting/report.html"
@@ -179,6 +181,8 @@ nuclei_scan() {
     echo -e "###Vulnerability scanning completed. ###\n"
 }
 
+
+echo -e "https://pastebin.com/ihj4UWui\n"
 
 # Main function
 main() {
