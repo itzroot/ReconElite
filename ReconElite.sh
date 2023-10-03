@@ -21,8 +21,6 @@ check_tools() {
     done
 }
 
-echo -e "flag is: nfsuCTF{617hub_4_u} \n"
-
 # Check if a target argument is provided
 if [ -z "$1" ]; then
     echo "Error: Please provide a target argument."
